@@ -1,0 +1,28 @@
+.stats-carousel img {
+    width: 100vw;
+	height: 20vw;
+    margin-left: calc(50% - 50vw);
+    aspect-ratio: 400 / 123;
+}
+* {
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+}
+
+main strong {
+    display: block;
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+@media (max-width: 599px) {
+    main strong {
+        font-size: 1.5rem; 
+    }
+}
+
