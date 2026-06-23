@@ -18,6 +18,7 @@ main strong {
     font-size: 1.875rem;
     color: black;
     margin-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 @media (max-width: 599px) {

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import './header.css'
+import Dropdown from './Dropdown'
 
 const TopBar = () => (
   <div className="topbar">
@@ -7,7 +8,6 @@ const TopBar = () => (
       <div className="left">customer.care@goldsgym.in</div>
       <div className="right">
         Welcome to Gold's Gym India.
-
       </div>
       <div>
         <ul className="social-big" aria-label="Social links">
@@ -53,12 +53,76 @@ export default function Header() {
         </div>
         <nav className="mainnav">
           <ul>
-            <li>Get Started</li>
-            <li>Fitness Institute – GGFI</li>
-            <li>Gallery</li>
-            <li>Programs</li>
-            <li>Franchise</li>
-            <li>Contact Us</li>
+            <Dropdown
+              label="Get Started"
+              items={[
+                "Our Gyms India",
+                "Our Gyms Nepal",
+                "Our Gyms Bangladesh",
+                "Buy Membership Now",
+                "Blogs",
+                "Our Events",
+                "Coming Soon",
+                "Pre Sale",
+                "Newsletter",
+              ]}
+            />
+            <Dropdown
+              label="Gallery"
+              items={[
+              ]}
+            />
+            <Dropdown
+              label="Fitness Institute – GGFI"
+              items={[
+                "GGFI About Us",
+                "Our locations accross India",
+                "Our Faculty",
+                "Certification & Accreditations",
+                "Courses Offered",
+                "Buy a Course",
+                "Book a Demo Class",
+                "Our Affiliate Program",
+                "Certificate Verification",
+              ]}
+            />
+            <Dropdown
+              label="Programs"
+              items={[
+                "Corporate Memberships",
+                "Personal Training Program",
+                "Group Program",
+                "Corporate Wellness Program",
+              ]}
+            />
+            <Dropdown
+              label="Franchise"
+              items={[
+                "Own a Gold’s Gym",
+              ]}
+            />
+            <Dropdown
+              label="Associations, Alliances & Advertising"
+              items={[
+              ]}
+            />
+            <Dropdown
+              label="Convention"
+              items={[
+                "Bangkok 2023",
+                "Dubai 2022",
+                "Kuala Lampur 2019",
+                "Kochi 2018",
+              ]}
+            />
+            <Dropdown
+              label="Contact Us"
+              items={[
+                "Find a Gym",
+                "Support",
+                "Feedback",
+              ]}
+            />
           </ul>
         </nav>
         <div className="cta">

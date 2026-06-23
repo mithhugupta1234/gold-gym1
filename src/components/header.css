@@ -17,6 +17,7 @@
     color: #fff;
     font-size: 14px;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -26,7 +27,10 @@ header {
     background: #fff;
     height: var(--header-height, 112px);
 }
-.navcontainer { box-sizing: border-box }
+
+.navcontainer {
+    box-sizing: border-box
+}
 
 .topbar .container {
     display: flex;
@@ -82,6 +86,68 @@ header {
     cursor: pointer;
 }
 
+.mainnav li {
+    position: relative
+}
+
+.has-dropdown .menu-btn {
+    background: transparent;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 6px 4px;
+    color: #111;
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.has-dropdown .menu-btn:focus {
+    outline: none
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    padding: 1px 6px;
+    min-width: 220px;
+    display: none;
+    z-index: 1500;
+}
+
+.has-dropdown:hover .dropdown,
+.has-dropdown:focus-within .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 8px 12px
+}
+
+.dropdown li+li {
+    margin-top: 1px
+}
+
+.dropdown a {
+    color: #222;
+    text-decoration: none;
+    display: block
+}
+
+.dropdown a:hover {
+    color: #00a8d6
+}
+
+@media(max-width:720px) {
+    .dropdown {
+        display: none !important
+    }
+}
+
 .cta {
     margin-left: auto;
     padding-right: 30px;
@@ -95,10 +161,20 @@ header {
     cursor: pointer;
     color: #000;
 }
-.topbar .left { font-weight: 600 }
+
+.topbar .left {
+    font-weight: 400
+}
+
 @media(max-width:720px) {
-    .mainnav ul { display: none }
-    .logo-img, .logo img { height: 36px }
+    .mainnav ul {
+        display: none
+    }
+
+    .logo-img,
+    .logo img {
+        height: 36px
+    }
 }
 
 .social-big {
@@ -138,6 +214,33 @@ header {
     opacity: 0.95;
     transform: translateY(-2px);
 }
-ol li, ul li {
+
+ol li,
+ul li {
     list-style: none;
+}
+
+@media (min-width: 993px) {
+
+    .mainnav ul>li.has-dropdown>.dropdown,
+    .navcontainer .mainnav ul>li.has-dropdown>.dropdown {
+        visibility: hidden !important;
+        opacity: 0 !important;
+        transform: scale(.8) !important;
+        display: none !important;
+        transition: all 0s ease-in-out !important;
+        z-index: 1500 !important;
+    }
+
+    .mainnav ul>li.has-dropdown:hover>.dropdown,
+    .mainnav ul>li.has-dropdown:focus-within>.dropdown,
+    .navcontainer .mainnav ul>li.has-dropdown:hover>.dropdown,
+    .navcontainer .mainnav ul>li.has-dropdown:focus-within>.dropdown {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: none !important;
+        display: block !important;
+        transition: all .15s ease-in-out !important;
+        z-index: 1600 !important;
+    }
 }

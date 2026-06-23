@@ -1,0 +1,95 @@
+.GoldsGymFitnessInstitute {
+    width: 100%;
+    padding-top: 35px;
+}
+
+.image-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 400 / 123;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: clamp(260px, 35vw, 600px);
+
+}
+
+.overlay {
+    position: absolute;
+    padding-top: 30px;
+    font-weight: bold;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    color: rgb(255, 255, 255) !important;
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.45));
+    pointer-events: none;
+    text-align: center;
+}
+
+.GoldsGymFitnessInstitute .overlay h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.GoldsGymFitnessInstitute .overlay .highlight {
+    color: #ffd400;
+}
+
+.GoldsGymFitnessInstitute .overlay .lead {
+    margin: 0;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+
+.GoldsGymFitnessInstitute .overlay .sub {
+    margin: 0;
+    font-weight: 600;
+    font-size: clamp(.9rem, 1.6vw, 1.1rem);
+    opacity: 0.95;
+}
+
+.Fitness {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700 !important;
+    padding-top: 30px;
+}
+
+.GoldsGymFitnessInstitute .overlay > div {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.4rem;
+}
+
+.GoldsGymFitnessInstitute .Fitness img {
+    aspect-ratio: 800 / 533;
+    height: clamp(64px, 10vw, 182px);
+    max-width: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.GoldsGymFitnessInstitute .know-more {
+    margin-top: 1.2rem;
+    background: rgb(255, 228, 0) !important;
+    color: #05203b;
+    border: none;
+    padding: 10px 40px;
+    font-weight: 700 !important;
+    font-size: 1rem;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.25);
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 120ms ease, box-shadow 120ms ease;
+}
