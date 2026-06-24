@@ -10,7 +10,11 @@ import goldsGymFitnessInstitute from './assets/GymFitnessInstitute.jpg'
 import Main from './components/maine'
 import GoldsGym from './components/GoldsGymFitnessInstitute'
 import Testimonials from './components/Testimonials'
+import BookYourFreeTrial2 from './components/BookYourFreeTrial2'
 import BookYourFreeTrial from './components/BookYourFreeTrial'
+import GetInTouchWithUs from './components/GETINTOUCHWITHUS'
+import OurBusinessVerticals from './components/ OurBusinessVerticals'
+
 
 export default function App() {
   return (
@@ -22,11 +26,14 @@ export default function App() {
         slideLocal,
         whatsappImg
       ]} />
-      
+
       <Main statsImg={statsImg} />
+      <OurBusinessVerticals />
       <BookYourFreeTrial />
       <GoldsGym goldsGymFitnessInstitute={goldsGymFitnessInstitute} />
       <Testimonials />
+      <GetInTouchWithUs />
+      <BookYourFreeTrial2 />
       <Footer />
     </div>
   )

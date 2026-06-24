@@ -1,0 +1,54 @@
+.byft-banner {
+    background: #F7E000;
+    border-bottom: 6px solid #00AEEF;
+    padding: 2.25rem 0;
+}
+
+.byft-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.byft-text h1 {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+.byft-text p {
+    margin: 6px 0 0;
+    color: #111;
+}
+
+.byft-cta {}
+
+.byft-button {
+    background: #000;
+    color: #F7E000;
+    border: none;
+    padding: 0.9rem 1.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .byft-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .byft-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .byft-cta {
+        margin-top: 1rem;
+    }
+}

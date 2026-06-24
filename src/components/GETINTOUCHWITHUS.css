@@ -1,0 +1,110 @@
+.get-in-touch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+   
+}
+
+.form-wrap {
+    width: 520px;
+    background: #6f6f6f;
+    padding: 14px 18px 22px 18px;
+    box-sizing: border-box;
+    
+}
+
+.heading-strip {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 4px solid #777;
+}
+
+.heading-strip h2 {
+    margin: 0;
+    color: #ffd800;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.lead {
+    background: #444;
+    color: #fff;
+    padding: 16px;
+    margin-top: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.contact-form {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.input.full {
+    width: 100%
+}
+
+.textarea {
+    height: 120px;
+    resize: vertical
+}
+
+.captcha-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.checkbox {
+    color: #fff;
+    font-size: 13px
+}
+
+.captcha-box {
+    background: #fff;
+    width: 140px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn {
+    margin-top: 14px;
+    background: #ffe600;
+    color: #000;
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 28px;
+    border: 2px solid #333;
+    cursor: pointer;
+}
+
+@media(max-width:980px) {
+    .get-in-touch {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .panel-image {
+        margin-left: 0;
+        width: 80%
+    }
+}
