@@ -14,6 +14,8 @@ import BookYourFreeTrial2 from './components/BookYourFreeTrial2'
 import BookYourFreeTrial from './components/BookYourFreeTrial'
 import GetInTouchWithUs from './components/GETINTOUCHWITHUS'
 import OurBusinessVerticals from './components/ OurBusinessVerticals'
+import ComingSoon from './components/PreSale'
+import Programs from './components/OurPrograms'
 
 
 export default function App() {
@@ -30,6 +32,8 @@ export default function App() {
       <Main statsImg={statsImg} />
       <OurBusinessVerticals />
       <BookYourFreeTrial />
+      <ComingSoon />
+      <Programs />
       <GoldsGym goldsGymFitnessInstitute={goldsGymFitnessInstitute} />
       <Testimonials />
       <GetInTouchWithUs />
