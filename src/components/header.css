@@ -108,15 +108,11 @@ header {
 
 .dropdown {
     position: absolute;
-    top: calc(100% + 12px);
-    left: 0;
     background: #fff;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-    border-radius: 2px;
-    padding: 1px 6px;
     min-width: 220px;
     display: none;
-    z-index: 1500;
+    font-size: large;
 }
 
 .has-dropdown:hover .dropdown,
@@ -125,11 +121,11 @@ header {
 }
 
 .dropdown li {
-    padding: 8px 12px
+    padding: 2px 12px
 }
 
 .dropdown li+li {
-    margin-top: 1px
+    margin-top: 4px
 }
 
 .dropdown a {

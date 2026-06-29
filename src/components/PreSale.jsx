@@ -9,7 +9,6 @@ export default function ComingSoon() {
         "Gold's Gym Mohali Punjab",
         "Gold's Gym MIT Kothrud Pune",
     ];
-
     return (
         <section
             className="coming-soon-section"
@@ -17,8 +16,6 @@ export default function ComingSoon() {
                 backgroundImage: `url(${backgroundImage})`,
             }}
         >
-            {/* Content */}
-
             <div className="overlay"></div>
 
             <div className="content">

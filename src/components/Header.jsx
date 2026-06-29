@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import './header.css'
 import Dropdown from './Dropdown'
+import { useNavigate } from "react-router-dom";
 
 const TopBar = () => (
   <div className="topbar">
@@ -42,6 +43,7 @@ const TopBar = () => (
   </div>
 )
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <header>
       <TopBar />
@@ -126,7 +128,7 @@ export default function Header() {
           </ul>
         </nav>
         <div className="cta">
-          <button className="trial">Free Trial</button>
+          <button className="trial" onClick={() => navigate("/membership")}>Free Trial</button>
         </div>
       </div>
     </header>

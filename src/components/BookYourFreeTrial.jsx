@@ -4,8 +4,10 @@ import heroImg from '../assets/BookYourFreeTrial.png'
 import logo2 from '../assets/GG-Express.png'
 import logo3 from '../assets/GG-Activ.png'
 import logo1 from '../assets/GG.png'
+import { useNavigate } from 'react-router-dom';
 
 export default function BookYourFreeTrial() {
+    const navigate = useNavigate();
     return (
         <section className="book-trial">
             <div
@@ -15,7 +17,7 @@ export default function BookYourFreeTrial() {
                 <div className="book-trial__overlay">
                     <h2 className="book-trial__eyebrow">Book Your Free Trial</h2>
                     <p className="book-trial__sub">Start Your Fitness Journey At Gold's Gym Today</p>
-                    <button className="book-trial__cta">Sign Me Up</button>
+                    <button className="book-trial__cta" onClick={() => navigate("/membership")}>Sign Me Up</button>
                 </div>
             </div>
 

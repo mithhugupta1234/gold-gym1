@@ -1,7 +1,9 @@
 import React from 'react'
 import './BookYourFreeTrial2.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function BookYourFreeTrial2() {
+    const navigate = useNavigate();
     return (
         <section className="byft-banner">
             <div className="byft-inner">
@@ -11,7 +13,7 @@ export default function BookYourFreeTrial2() {
                 </div>
 
                 <div className="byft-cta">
-                    <button className="byft-button">Book Your Free Trial</button>
+                    <button className="byft-button" onClick={() => navigate("/membership")}>Book Your Free Trial</button>
                 </div>
             </div>
         </section>
