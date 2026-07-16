@@ -29,7 +29,9 @@ header {
 }
 
 .navcontainer {
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 .topbar .container {
@@ -144,11 +146,6 @@ header {
     }
 }
 
-.cta {
-    margin-left: auto;
-    padding-right: 30px;
-}
-
 .trial {
     background: #f9e602;
     border: none;
@@ -158,6 +155,10 @@ header {
     color: #000;
 }
 
+.trial:hover {
+    background: #000;
+    color: white
+}
 .topbar .left {
     font-weight: 400
 }

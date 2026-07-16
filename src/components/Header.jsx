@@ -53,82 +53,82 @@ export default function Header() {
             <img loading="lazy" className="logo-img" src="https://i0.wp.com/goldsgym.in/wp-content/uploads/2023/10/fullcolor.png?w=563&ssl=1" alt="Gold's Gym" />
           </a>
         </div>
-        <nav className="mainnav">
-          <ul>
-            <Dropdown
-              label="Get Started"
-              items={[
-                "Our Gyms India",
-                "Our Gyms Nepal",
-                "Our Gyms Bangladesh",
-                "Buy Membership Now",
-                "Blogs",
-                "Our Events",
-                "Coming Soon",
-                "Pre Sale",
-                "Newsletter",
-              ]}
-            />
-            <Dropdown
-              label="Gallery"
-              items={[
-              ]}
-            />
-            <Dropdown
-              label="Fitness Institute – GGFI"
-              items={[
-                "GGFI About Us",
-                "Our locations accross India",
-                "Our Faculty",
-                "Certification & Accreditations",
-                "Courses Offered",
-                "Buy a Course",
-                "Book a Demo Class",
-                "Our Affiliate Program",
-                "Certificate Verification",
-              ]}
-            />
-            <Dropdown
-              label="Programs"
-              items={[
-                "Corporate Memberships",
-                "Personal Training Program",
-                "Group Program",
-                "Corporate Wellness Program",
-              ]}
-            />
-            <Dropdown
-              label="Franchise"
-              items={[
-                "Own a Gold’s Gym",
-              ]}
-            />
-            <Dropdown
-              label="Associations, Alliances & Advertising"
-              items={[
-              ]}
-            />
-            <Dropdown
-              label="Convention"
-              items={[
-                "Bangkok 2023",
-                "Dubai 2022",
-                "Kuala Lampur 2019",
-                "Kochi 2018",
-              ]}
-            />
-            <Dropdown
-              label="Contact Us"
-              items={[
-                "Find a Gym",
-                "Support",
-                "Feedback",
-              ]}
-            />
-          </ul>
-        </nav>
-        <div className="cta">
-          <button className="trial" onClick={() => navigate("/membership")}>Free Trial</button>
+        <div>
+          <nav className="mainnav">
+            <ul>
+              <Dropdown
+                label="Get Started"
+                items={[
+                  "Our Gyms India",
+                  "Our Gyms Nepal",
+                  "Our Gyms Bangladesh",
+                  "Buy Membership Now",
+                  "Blogs",
+                  "Our Events",
+                  "Coming Soon",
+                  "Pre Sale",
+                  "Newsletter",
+                ]}
+              />
+              <Dropdown
+                label="Gallery"
+                items={[
+                ]}
+              />
+              <Dropdown
+                label="Fitness Institute – GGFI"
+                items={[
+                  "GGFI About Us",
+                  "Our locations accross India",
+                  "Our Faculty",
+                  "Certification & Accreditations",
+                  "Courses Offered",
+                  "Buy a Course",
+                  "Book a Demo Class",
+                  "Our Affiliate Program",
+                  "Certificate Verification",
+                ]}
+              />
+              <Dropdown
+                label="Programs"
+                items={[
+                  "Corporate Memberships",
+                  "Personal Training Program",
+                  "Group Program",
+                  "Corporate Wellness Program",
+                ]}
+              />
+              <Dropdown
+                label="Franchise"
+                items={[
+                  "Own a Gold’s Gym",
+                ]}
+              />
+              <Dropdown
+                label="Associations, Alliances & Advertising"
+                items={[
+                ]}
+              />
+              <Dropdown
+                label="Convention"
+                items={[
+                  "Bangkok 2023",
+                  "Dubai 2022",
+                  "Kuala Lampur 2019",
+                  "Kochi 2018",
+                ]}
+              />
+              <Dropdown
+                label="Contact Us"
+                items={[
+                  "Find a Gym",
+                  "Support",
+                  "Feedback",
+                ]}
+              />
+              <button className="trial" onClick={() => navigate("/membership")}>Free Trial</button>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
