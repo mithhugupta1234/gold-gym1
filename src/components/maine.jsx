@@ -4,7 +4,7 @@ import "./maine.css";
 export default function Main({ statsImg }) {
 	return (
 		<main>
-			<div className="stats-carousel container">
+			<div className="stats-carousel">
 				<img src={statsImg} alt="Gold's Gym stats" />
 			</div>
 			<h2>Our Legacy</h2>
